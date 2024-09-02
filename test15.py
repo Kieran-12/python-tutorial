@@ -1,7 +1,7 @@
 print("Hello, welcome to the rock, paper, scissors simulator!")
+import random
 
 while True:
-    import random
     number = random.randint(1, 3)
 
     if number == 1:
@@ -17,7 +17,7 @@ while True:
             break
         else:
             print("Please input a valid option (Rock, Paper or Scissors).")
-    
+
     if comp == "rock":
         print("Computer chose rock!")
         if choice == "rock":
@@ -26,7 +26,7 @@ while True:
             print("You win!")
         else:
             print("You lose! Try again!")
-        
+
     elif comp == "paper":
         print("Computer chose paper!")
         if choice == "rock":
@@ -35,7 +35,7 @@ while True:
             print("It's a draw!")
         else:
             print("You win!")
-    
+
     else:
         print("Computer chose scissors!")
         if choice == "rock":
@@ -44,18 +44,17 @@ while True:
             print("You lose! Try again!")
         else:
             print("It's a draw!")
-    
+
     while True:
         retry = input("Try again? (Yes/No): ").lower()
         if retry not in ("yes", "no"):
             print("Please enter a valid option (Yes/No).")
         else:
             break
-    
+
     if retry == "yes":
         continue
     else:
         break
 
-print("Thanks for playing!")        
-
+print("Thanks for playing!")
