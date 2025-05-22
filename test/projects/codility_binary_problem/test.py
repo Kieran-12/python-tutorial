@@ -62,8 +62,6 @@ binary_array = binary_in_array(number_base2)
 # arrays and counters
 count_of_1 = 0
 positions_of_1 = []
-adjacent_numbers = []
-ranges = []
 
 
 # counts the number of 1's (if there are 0 or 1 one's, then the result will always be 0)
